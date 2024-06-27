@@ -76,6 +76,8 @@ Profundidad: Igual al número de filtros aplicados en la capa de convolución.
 
 <div align="center">
 	<img src="/img/DispositivoSacadoDeFotos.png">
+</div>
+<div align="center">
 	<center><em>Figura 5 - Dispositivo de Toma de Fotos</em></center>
 </div>
 
