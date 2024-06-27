@@ -16,6 +16,7 @@ Convolución (Filtros y Kernel)
 ➤Filtros (Kernels): Son matrices pequeñas que recorren la imagen para detectar características específicas como bordes, texturas y patrones. Cada filtro se aplica a una región de la imagen de entrada y produce una característica en la salida.
 
 ➤Operación de Convolución: Multiplica los valores del kernel por los valores de la imagen en la región cubierta por el kernel y suma estos valores para obtener un solo valor en la salida. Esto se repite para cada posición del kernel en la imagen.
+
 ![Convolucion](/img/convolucion.gif)
 
 2. Mapas de Características (Feature Maps)
@@ -25,19 +26,22 @@ Convolución (Filtros y Kernel)
 ➤Dimensiones:
 Alto y Largo: Dependen del tamaño del filtro, el paso (stride) y el relleno (padding). No siempre son iguales a las dimensiones de la imagen de entrada.
 Profundidad: Igual al número de filtros aplicados en la capa de convolución.
+
 <div align="center">
-	<img src="img/ESQUEMA.png">
-	<em> Figura 1 - Esquema Feature Map </em>
+	<img src="ESQUEMA.png">
+	<em> Figura 1 - EsquemaFeatureMap </em>
 </div>
 
 3. Pooling
 
 ➤Max Pooling y Average Pooling: Reducen la dimensionalidad de los mapas de características. Max pooling toma el valor máximo en una región específica, mientras que average pooling toma el promedio. Esto reduce el número de parámetros y la carga computacional, además de hacer la red más robusta a pequeñas variaciones en la posición de las características.
+
 ![Pooling](/img/maxpool.gif)
 
 4. Capas Completamente Conectadas (Fully Connected Layers)
 
 ➤Clasificación: Después de varias capas convolucionales y de pooling, los mapas de características se aplanan y pasan a través de una o más capas completamente conectadas. Estas capas actúan como una red neuronal tradicional y se utilizan para la clasificación final.
+
 ![Fully Conected](/img/fullyconect.gif)
 
 5. Algoritmos de Entrenamiento
@@ -69,9 +73,10 @@ Profundidad: Igual al número de filtros aplicados en la capa de convolución.
 ### 3. Armado Del Dataset 
 
 1. Se armo el siguiente dispositivo para tomar las fotos.
+
 <div align="center">
-	<img src="/img/Dispositivo_Sacado_De_Fotos.png">
-	<em> Figura 1 - Dispositivo_Sacado_De_Fotos </em>
+	<img src="/img/DispositivoSacadoDeFotos.png">
+	<em> Figura 2 - DispositivoSacadoDeFotos </em>
 </div>
 
 2. Criterios para capturar las fotos.
@@ -89,9 +94,10 @@ Profundidad: Igual al número de filtros aplicados en la capa de convolución.
 ➤Se tomaron 2000 fotos de maices con lenteas con arroz. Con los mismos criterios que maices con lentejas pero con un fondo de arroz.
 
 ➤Caracteristicas de las fotos (2250x4000)
+
 <div align="center">
 	<img src="/img/Foto_Pura.png">
-	<em> Figura 1 - Foto_Pura </em>
+	<em> Figura 3 - FotoPura </em>
 </div>
 
 3. Criterios para el armado del dataset
@@ -99,9 +105,10 @@ Profundidad: Igual al número de filtros aplicados en la capa de convolución.
 ➤Se reducio la resolucion de las fotos un factor 10 para que tuvieran un tamaño menor sin perder tanta informacion de la misma.
 
 ➤Caracteristicas de las fotos reducidas (225x400)
+
 <div align="center">
 	<img src="Comparacion tanda de imagenes aclarando cantidad de fotos.png">
-	<em> Figura 1 - Foto_Pura </em>
+	<em> Figura 4 - FotoReducida </em>
 </div>
 
 ➤Mayormente se tomo de ejemplo el dataset CIFAR-10
@@ -111,37 +118,102 @@ Profundidad: Igual al número de filtros aplicados en la capa de convolución.
 ➤Se ordenaron dentro de una carpeta llamada DataSet_1a20_NumeroDeImagenes_Maices_(Solos o Acompañamiento)_225x400_RGB.
 La misma tiene subcarpetas del 1 al 20 donde dentro se ordenaron las fotos segun su cantidad de maices. (Fotos de 1 maiz en carpeta 1 y asi sucesivamente)
 
+_[Datasets](https://github.com/Leandrituw/Contando-Objetos-Con-Redes-Neuronales-Convolucionales/tree/main/Armado_Del_Dataset)_
+
 ➤Para almacenar los datasets y cargarlos en python los transformamos a archivos con la extension .npy que basicamente lo que hace es leer los archivos de la carpeta DataSet_1a20_NumeroDeImagenes_Maices_(Solos o Acompañamiento)_225x400_RGB y almacenar en una lista el numero de subcarpeta como etiqueta y dentro de la etiqueta guarda la imagen como lista.
 ¿Porque? Son faciles de cargar y leer en python y tiene un tamaño mucho menor que el dataset puro.
 
 _[Codigo_Armado_Del_Dataset](https://github.com/Leandrituw/Contando-Objetos-Con-Redes-Neuronales-Convolucionales/blob/main/Armado_Del_Dataset/Reducir_Resolucion_Crear_DataSet_RGB.py)_
 
-
-
 ### 5. Diseño De La Red
 
-ACLARAR LIBRERIAS
-SE PARTIO DEL DATASET 80 - 20
-ACLARAR QUE SE COMENZO POR SOLO MAICES Y FUERON VARIANDO LOS CRITERIOS (FILTROS, CAPAS, POOLING, EPOCHS) Y SE CONTROLABA LA PRECISION DE LOS DATOS DE TESTEO
-ESQUEMA DE ARQUITECTURA FINAL
-SUMMARY
-CODIGO
+➤Librerias utilizadas en el codigo: Numpy, Seaborn, Matplotlib, scikit-learn, TensorFlow Keras, time.
+
+➤Se comenzo con el dataset de solo maices partiendo el mismo en 80% entrenamiento y 20% testeo variando criterios como capas, filtros, pooling, epochs entre otros menos impactantes pero importantes como batch size, dropouts y random state mientras se controlaba la precision de los datos de testeo para conseguir la arquitectura que mejor precision nos diera.
 
 <div align="center">
-	<img src="img/cifar-10.png">
+	<img src="ARQUITECTURA FINAL">
+	<em> Figura 5 - ArquitecturaFinal </em>
 </div>
+
+➤Todo esto nos dio como resultado el siguiente summary.
+
+<div align="center">
+	<img src="SUMMARY">
+	<em> Figura 6 - Summary </em>
+</div>
+
+_[Codigo_Entrenar_Red_Neuronal](https://github.com/Leandrituw/Contando-Objetos-Con-Redes-Neuronales-Convolucionales/blob/main/Entrenamiento_De_Arquitecturas/Entrenar_Red_Neuronal_RGB.py)_
 
 ### 6. Prediccion y Resultados 
 
-CURVA DE PRECISION - MAICES SOLOS 
-IMAGEN PREDECIDA 
-MATRIZ DE CONFUSION 
-EXPLICACION DE LAS OTRAS TANDAS DE ENTRENAMIENTO 
-IMAGENES DE PREDICCION
+Se hizo un codigo en el que se sube una carpeta con imagenes a predecir y el modelo a usar.
+Al final se indica cantidad de maices predecida para cada imagen, precision de prediccion, numero de imagenes predecidas correcta e incorrectamente y nombre de imagenes predecidas incorrectamente.
+
+1. MAICES SOLOS
+
+➤Precision de entrenamiento:
 
 <div align="center">
-	<img src="img/FOTO.png">
+	<img src="SUMMARY">
+	<em> Figura 7 - CurvaAprendizaje </em>
 </div>
+
+<div align="center">
+	<img src="SUMMARY">
+	<em> Figura 8 - MatrizConfusion </em>
+</div>
+
+➤Precision de prediccion de imagenes:
+
+<div align="center">
+	<img src="SUMMARY">
+	<em> Figura 9 - ImagenPredecidaMaicesSolos </em>
+</div>
+
+2. MAICES CON LENTEJAS
+
+➤Precision de entrenamiento:
+
+<div align="center">
+	<img src="SUMMARY">
+	<em> Figura 7 - CurvaAprendizaje </em>
+</div>
+
+<div align="center">
+	<img src="SUMMARY">
+	<em> Figura 8 - MatrizConfusion </em>
+</div>
+
+➤Precision de prediccion de imagenes:
+
+<div align="center">
+	<img src="SUMMARY">
+	<em> Figura 9 - ImagenPredecidaMaicesSolos </em>
+</div>
+
+3. MAICES CON LENTEJAS CON ARROZ
+
+➤Precision de entrenamiento:
+
+<div align="center">
+	<img src="SUMMARY">
+	<em> Figura 7 - CurvaAprendizaje </em>
+</div>
+
+<div align="center">
+	<img src="SUMMARY">
+	<em> Figura 8 - MatrizConfusion </em>
+</div>
+
+➤Precision de prediccion de imagenes:
+
+<div align="center">
+	<img src="SUMMARY">
+	<em> Figura 9 - ImagenPredecidaMaicesSolos </em>
+</div>
+
+_[Codigo_Prediccion](https://github.com/Leandrituw/Contando-Objetos-Con-Redes-Neuronales-Convolucionales/blob/main/Prediccion_De_Imagenes/Prediccion_RGB.py)_
 
 ### 7. Recursos 
 
