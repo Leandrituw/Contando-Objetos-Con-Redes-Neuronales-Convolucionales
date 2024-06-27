@@ -17,7 +17,10 @@ Convolución (Filtros y Kernel)
 
 ➤Operación de Convolución: Multiplica los valores del kernel por los valores de la imagen en la región cubierta por el kernel y suma estos valores para obtener un solo valor en la salida. Esto se repite para cada posición del kernel en la imagen.
 
-![Convolucion](/img/convolucion.gif)
+<div align="center">
+	![Convolucion](/img/convolucion.gif)
+	<em> Figura 1 - EsquemaFeatureMap </em>
+</div>
 
 2. Mapas de Características (Feature Maps)
 
