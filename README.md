@@ -162,7 +162,7 @@ _[Codigo_Armado_Del_Dataset](https://github.com/Leandrituw/Contando-Objetos-Con-
 ➤Todo esto nos dio como resultado el siguiente summary.
 
 <div align="center">
-	<img src="/img/Summary">
+	<img src="/img/Summary.png">
 </div>
 <div align="center">
 	<em> Figura 9 - Summary </em>
