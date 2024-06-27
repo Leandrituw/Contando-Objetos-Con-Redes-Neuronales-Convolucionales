@@ -17,10 +17,11 @@ Convolución (Filtros y Kernel)
 
 ➤Operación de Convolución: Multiplica los valores del kernel por los valores de la imagen en la región cubierta por el kernel y suma estos valores para obtener un solo valor en la salida. Esto se repite para cada posición del kernel en la imagen.
 
-![Convolucion](/img/convolucion.gif)
 <div align="center">
 	<img src="/img/convolucion.gif">
-	<em> Figura 1 - EsquemaFeatureMap </em>
+</div>
+<div align="center">
+	<em> Figura 1 - Convolucion </em>
 </div>
 
 2. Mapas de Características (Feature Maps)
@@ -33,20 +34,30 @@ Profundidad: Igual al número de filtros aplicados en la capa de convolución.
 
 <div align="center">
 	<img src="ESQUEMA.png">
-	<em> Figura 1 - EsquemaFeatureMap </em>
+	<em> Figura 1 - Esquema Feature Map </em>
 </div>
 
 3. Pooling
 
 ➤Max Pooling y Average Pooling: Reducen la dimensionalidad de los mapas de características. Max pooling toma el valor máximo en una región específica, mientras que average pooling toma el promedio. Esto reduce el número de parámetros y la carga computacional, además de hacer la red más robusta a pequeñas variaciones en la posición de las características.
 
-![Pooling](/img/maxpool.gif)
+<div align="center">
+	<img src="/img/maxpool.gif">
+</div>
+<div align="center">
+	<em> Figura 1 - MaxPool </em>
+</div>
 
 4. Capas Completamente Conectadas (Fully Connected Layers)
 
 ➤Clasificación: Después de varias capas convolucionales y de pooling, los mapas de características se aplanan y pasan a través de una o más capas completamente conectadas. Estas capas actúan como una red neuronal tradicional y se utilizan para la clasificación final.
 
-![Fully Conected](/img/fullyconect.gif)
+<div align="center">
+	<img src="/img/fullyconect.gif">
+</div>
+<div align="center">
+	<em> Figura 1 - Fully Conect Layers </em>
+</div>
 
 5. Algoritmos de Entrenamiento
 
@@ -103,7 +114,9 @@ Profundidad: Igual al número de filtros aplicados en la capa de convolución.
 
 <div align="center">
 	<img src="/img/Foto_Pura.png">
-	<em> Figura 3 - FotoPura </em>
+</div>
+<div align="center">
+	<em> Figura 3 - Foto Pura </em>
 </div>
 
 3. Criterios para el armado del dataset
@@ -114,7 +127,9 @@ Profundidad: Igual al número de filtros aplicados en la capa de convolución.
 
 <div align="center">
 	<img src="Comparacion tanda de imagenes aclarando cantidad de fotos.png">
-	<em> Figura 4 - FotoReducida </em>
+</div>
+<div align="center">
+	<em> Figura 4 - Foto Reducida </em>
 </div>
 
 ➤Mayormente se tomo de ejemplo el dataset CIFAR-10
@@ -139,13 +154,17 @@ _[Codigo_Armado_Del_Dataset](https://github.com/Leandrituw/Contando-Objetos-Con-
 
 <div align="center">
 	<img src="ARQUITECTURA FINAL">
-	<em> Figura 5 - ArquitecturaFinal </em>
+</div>
+<div align="center">
+	<em> Figura 5 - Arquitectura Final </em>
 </div>
 
 ➤Todo esto nos dio como resultado el siguiente summary.
 
 <div align="center">
 	<img src="SUMMARY">
+</div>
+<div align="center">
 	<em> Figura 6 - Summary </em>
 </div>
 
@@ -162,19 +181,25 @@ Al final se indica cantidad de maices predecida para cada imagen, precision de p
 
 <div align="center">
 	<img src="SUMMARY">
-	<em> Figura 7 - CurvaAprendizaje </em>
+</div>
+<div align="center">
+	<em> Figura 7 - Curva Aprendizaje </em>
 </div>
 
 <div align="center">
 	<img src="SUMMARY">
-	<em> Figura 8 - MatrizConfusion </em>
+</div>
+<div align="center">
+	<em> Figura 8 - Matriz Confusion </em>
 </div>
 
 ➤Precision de prediccion de imagenes:
 
 <div align="center">
 	<img src="SUMMARY">
-	<em> Figura 9 - ImagenPredecidaMaicesSolos </em>
+</div>
+<div align="center">
+	<em> Figura 9 - Imagen Predecida Maices Solos </em>
 </div>
 
 2. MAICES CON LENTEJAS
@@ -183,19 +208,25 @@ Al final se indica cantidad de maices predecida para cada imagen, precision de p
 
 <div align="center">
 	<img src="SUMMARY">
-	<em> Figura 7 - CurvaAprendizaje </em>
+</div>
+<div align="center">
+	<em> Figura 7 - Curva Aprendizaje </em>
 </div>
 
 <div align="center">
 	<img src="SUMMARY">
-	<em> Figura 8 - MatrizConfusion </em>
+</div>
+<div align="center">
+	<em> Figura 8 - Matriz Confusion </em>
 </div>
 
 ➤Precision de prediccion de imagenes:
 
 <div align="center">
 	<img src="SUMMARY">
-	<em> Figura 9 - ImagenPredecidaMaicesSolos </em>
+</div>
+<div align="center">
+	<em> Figura 9 - Imagen Predecida Maices Con Lentejas </em>
 </div>
 
 3. MAICES CON LENTEJAS CON ARROZ
@@ -204,19 +235,25 @@ Al final se indica cantidad de maices predecida para cada imagen, precision de p
 
 <div align="center">
 	<img src="SUMMARY">
-	<em> Figura 7 - CurvaAprendizaje </em>
+</div>
+<div align="center">
+	<em> Figura 7 - Curva Aprendizaje </em>
 </div>
 
 <div align="center">
 	<img src="SUMMARY">
-	<em> Figura 8 - MatrizConfusion </em>
+</div>
+<div align="center">
+	<em> Figura 8 - Matriz Confusion </em>
 </div>
 
 ➤Precision de prediccion de imagenes:
 
 <div align="center">
 	<img src="SUMMARY">
-	<em> Figura 9 - ImagenPredecidaMaicesSolos </em>
+</div>
+<div align="center">
+	<em> Figura 9 - Imagen Predecida Maices Con Lentejas Con Arroz </em>
 </div>
 
 _[Codigo_Prediccion](https://github.com/Leandrituw/Contando-Objetos-Con-Redes-Neuronales-Convolucionales/blob/main/Prediccion_De_Imagenes/Prediccion_RGB.py)_
