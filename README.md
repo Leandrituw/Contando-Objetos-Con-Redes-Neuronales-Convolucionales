@@ -33,8 +33,8 @@ Alto y Largo: Dependen del tamaño del filtro, el paso (stride) y el relleno (pa
 Profundidad: Igual al número de filtros aplicados en la capa de convolución.
 
 <div align="center">
-	<img src="ESQUEMA.png">
-	<em> Figura 2 - Esquema Feature Map </em>
+	<img src="/img/cifar-10.png">
+	<em> Figura 2 - Esquema Feature Map de CIFAR-10</em>
 </div>
 
 3. Pooling
