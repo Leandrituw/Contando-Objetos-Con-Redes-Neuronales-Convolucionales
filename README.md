@@ -75,8 +75,8 @@ Profundidad: Igual al número de filtros aplicados en la capa de convolución.
 1. Se armo el siguiente dispositivo para tomar las fotos.
 
 <div align="center">
-	<img src="/img/DispositivoSacadoDeFotos.png">
-	<em> Figura 2 - DispositivoSacadoDeFotos </em>
+	![Dispositivo de Toma de Fotos](/img/DispositivoSacadoDeFotos.png)
+	<center><em>Figura 5 - Dispositivo de Toma de Fotos</em></center>
 </div>
 
 2. Criterios para capturar las fotos.
