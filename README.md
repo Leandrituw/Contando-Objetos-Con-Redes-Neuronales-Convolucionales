@@ -147,7 +147,7 @@ _[Codigo_Entrenar_Red_Neuronal](https://github.com/Leandrituw/Contando-Objetos-C
 
 ### 6. Prediccion y Resultados 
 
-Se hizo un codigo en el que se sube una carpeta con imagenes a predecir y el modelo a usar.
+➤Se hizo un codigo en el que se sube una carpeta con imagenes a predecir y el modelo a usar.
 Al final se indica cantidad de maices predecida para cada imagen, precision de prediccion, numero de imagenes predecidas correcta e incorrectamente y nombre de imagenes predecidas incorrectamente.
 
 1. MAICES SOLOS
