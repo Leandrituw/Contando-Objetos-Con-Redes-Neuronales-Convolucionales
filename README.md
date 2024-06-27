@@ -139,7 +139,9 @@ Profundidad: Igual al número de filtros aplicados en la capa de convolución.
 ➤Se ordenaron dentro de una carpeta llamada DataSet_1a20_NumeroDeImagenes_Maices_(Solos o Acompañamiento)_225x400_RGB.
 La misma tiene subcarpetas del 1 al 20 donde dentro se ordenaron las fotos segun su cantidad de maices. (Fotos de 1 maiz en carpeta 1 y asi sucesivamente)
 
-_[Datasets](https://github.com/Leandrituw/Contando-Objetos-Con-Redes-Neuronales-Convolucionales/tree/main/Armado_Del_Dataset)_
+<div align="center">
+	_[Datasets](https://github.com/Leandrituw/Contando-Objetos-Con-Redes-Neuronales-Convolucionales/tree/main/Armado_Del_Dataset)_
+</div>
 
 ➤Para almacenar los datasets y cargarlos en python los transformamos a archivos con la extension .npy que basicamente lo que hace es leer los archivos de la carpeta DataSet_1a20_NumeroDeImagenes_Maices_(Solos o Acompañamiento)_225x400_RGB y almacenar en una lista el numero de subcarpeta como etiqueta y dentro de la etiqueta guarda la imagen como lista.
 ¿Porque? Son faciles de cargar y leer en python y tiene un tamaño mucho menor que el dataset puro.
