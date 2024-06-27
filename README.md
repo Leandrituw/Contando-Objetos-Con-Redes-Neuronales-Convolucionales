@@ -10,14 +10,18 @@ Crear un dataset con imagenes propias para entrenar una red neuronal. A partir d
 
 Las Redes Neuronales Convolucionales (CNN) son un tipo de red neuronal diseñada para procesar y analizar datos con una estructura de cuadrícula, como imágenes. Han revolucionado el reconocimiento de imágenes y tienen aplicaciones en video, procesamiento del lenguaje natural y bioinformática.
 
-Componentes Principales
-1. Convolución (Filtros y Kernel)
+1. Componentes Principales
+Convolución (Filtros y Kernel)
+
 ➤Filtros (Kernels): Son matrices pequeñas que recorren la imagen para detectar características específicas como bordes, texturas y patrones. Cada filtro se aplica a una región de la imagen de entrada y produce una característica en la salida.
+
 ➤Operación de Convolución: Multiplica los valores del kernel por los valores de la imagen en la región cubierta por el kernel y suma estos valores para obtener un solo valor en la salida. Esto se repite para cada posición del kernel en la imagen.
 ![Convolucion](/img/convolucion.gif)
 
 2. Mapas de Características (Feature Maps)
+
 ➤Generación de Características: Al aplicar múltiples filtros a una imagen de entrada, se generan varios mapas de características que capturan diferentes aspectos de la imagen.
+
 ➤Dimensiones:
 Alto y Largo: Dependen del tamaño del filtro, el paso (stride) y el relleno (padding). No siempre son iguales a las dimensiones de la imagen de entrada.
 Profundidad: Igual al número de filtros aplicados en la capa de convolución.
@@ -27,41 +31,92 @@ Profundidad: Igual al número de filtros aplicados en la capa de convolución.
 </div>
 
 3. Pooling
+
 ➤Max Pooling y Average Pooling: Reducen la dimensionalidad de los mapas de características. Max pooling toma el valor máximo en una región específica, mientras que average pooling toma el promedio. Esto reduce el número de parámetros y la carga computacional, además de hacer la red más robusta a pequeñas variaciones en la posición de las características.
 ![Pooling](/img/maxpool.gif)
 
 4. Capas Completamente Conectadas (Fully Connected Layers)
+
 ➤Clasificación: Después de varias capas convolucionales y de pooling, los mapas de características se aplanan y pasan a través de una o más capas completamente conectadas. Estas capas actúan como una red neuronal tradicional y se utilizan para la clasificación final.
 ![Fully Conected](/img/fullyconect.gif)
 
 5. Algoritmos de Entrenamiento
+
 ➤Backpropagation: Ajusta los pesos de la red calculando el gradiente del error con respecto a cada peso mediante descenso de gradiente.
+
 ➤Optimización: Algoritmos como SGD (Stochastic Gradient Descent), Adam y RMSprop actualizan los pesos de manera eficiente durante el entrenamiento.
+
 ➤Función de Pérdida: Las CNNs usan funciones de pérdida como la entropía cruzada para cuantificar el error entre las predicciones de la red y las etiquetas reales.
 
 6. Ventajas de las CNN
+
 ➤Extracción Automática de Características: Los filtros aprenden automáticamente a detectar características relevantes durante el entrenamiento.
+
 ➤Invariancia a la Translación: Las operaciones de pooling hacen que las CNNs sean robustas a la posición de las características dentro de la imagen.
+
 ➤Reducción de Parámetros: Las CNNs reducen significativamente el número de parámetros gracias al uso de filtros compartidos y pooling.
 
 7. Aplicaciones
+
 ➤Reconocimiento de Imágenes: Clasificación, detección de objetos, segmentación semántica.
+
 ➤Procesamiento de Video: Detección y seguimiento de objetos en secuencias de video.
+
 ➤Procesamiento de Lenguaje Natural: Análisis de sentimientos, clasificación de texto.
+
 ➤Bioinformática: Análisis de secuencias de ADN, predicción de estructuras proteicas.
 	
 ### 3. Armado Del Dataset 
 
+1. Se armo el siguiente dispositivo para tomar las fotos.
 <div align="center">
-	<img src="FOTO DEL DISPOSITIVO PARA SACAR FOTOS">
+	<img src="/img/Dispositivo_Sacado_De_Fotos.png">
+	<em> Figura 1 - Dispositivo_Sacado_De_Fotos </em>
 </div>
-CRITERIOS CON LOS QUE SE SACARON LAS FOTOS
-CARACTERISTICAS DE LAS FOTOS
-FOTOS DE EJEMPLO
-LAS 3 TRANDAS DE IMAGENES GENERADAS ACLARANDO CANTIDAD DE FOTOS 
-EXPLICACION DE LAS FOTOS HASTA .NPY Y PORQUE (RESIZE, ORDENADO, COLORES, RENOMBRAR, MENCIONAR EJEMPLOS TOMADOS
-LINK A LAS 3 TANDAS DE FOTOS 
-CODIGO 
+
+2. Criterios para capturar las fotos.
+
+➤Fondo de cartulina negra (22cm de ancho x 27cm de largo con un margen de 1cm)
+
+➤Altura de la camara 18cm de alto
+
+➤Celular Samsung A21s
+
+➤Se tomaron 1000 fotos de maices solos. (50 fotos por cantidad de maices de 1 a 20 maices)
+
+➤Se tomaron 2000 fotos de maíces con lentejas. Se capturaron 100 fotos por cada cantidad de maíz de 1 a 10 lentejas, comenzando con 1 maíz y 1 lenteja y aumentando hasta 1 maíz y 10 lentejas. Luego, el número de maíces se incrementó de 1 a 20, manteniendo el mismo rango de lentejas de 1 a 10, tomando 10 fotos por cada cantidad de maices con 1 lenteja y asi hasta 10 con un total de 100 fotos por cantidad de maices.
+
+➤Se tomaron 2000 fotos de maices con lenteas con arroz. Con los mismos criterios que maices con lentejas pero con un fondo de arroz.
+
+➤Caracteristicas de las fotos (2250x4000)
+<div align="center">
+	<img src="/img/Foto_Pura.png">
+	<em> Figura 1 - Foto_Pura </em>
+</div>
+
+3. Criterios para el armado del dataset
+
+➤Se reducio la resolucion de las fotos un factor 10 para que tuvieran un tamaño menor sin perder tanta informacion de la misma.
+
+➤Caracteristicas de las fotos reducidas (225x400)
+<div align="center">
+	<img src="Comparacion tanda de imagenes aclarando cantidad de fotos.png">
+	<em> Figura 1 - Foto_Pura </em>
+</div>
+
+➤Mayormente se tomo de ejemplo el dataset CIFAR-10
+
+➤Se renombraron las fotos para un mejor orden segun su numero de foto y cantidad de maices (NumeroDeFoto_CantidadDeMaices ejemplo 1_1, 1_2 y asi hasta 50_1 y luego con 2 maices hasta 20). En el caso de lentejas seria cantidad de maices, cantidad de lentejas y numero de foto (1_1_1 hasta 1_10_10 hasta 20 maices.) y con arroz seria cantidad de maices, cantidad de lentejas, A y numero de foto (1_1_A_1 hasta 1_10_A_10 hasta 20 maices.)
+
+➤Se ordenaron dentro de una carpeta llamada DataSet_1a20_NumeroDeImagenes_Maices_(Solos o Acompañamiento)_225x400_RGB.
+La misma tiene subcarpetas del 1 al 20 donde dentro se ordenaron las fotos segun su cantidad de maices. (Fotos de 1 maiz en carpeta 1 y asi sucesivamente)
+
+➤Para almacenar los datasets y cargarlos en python los transformamos a archivos con la extension .npy que basicamente lo que hace es leer los archivos de la carpeta DataSet_1a20_NumeroDeImagenes_Maices_(Solos o Acompañamiento)_225x400_RGB y almacenar en una lista el numero de subcarpeta como etiqueta y dentro de la etiqueta guarda la imagen como lista.
+¿Porque? Son faciles de cargar y leer en python y tiene un tamaño mucho menor que el dataset puro.
+
+_[Codigo_Armado_Del_Dataset](https://github.com/Leandrituw/Contando-Objetos-Con-Redes-Neuronales-Convolucionales/blob/main/Armado_Del_Dataset/Reducir_Resolucion_Crear_DataSet_RGB.py)_
+
+
 
 ### 5. Diseño De La Red
 
