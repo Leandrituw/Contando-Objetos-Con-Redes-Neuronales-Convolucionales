@@ -126,7 +126,7 @@ Profundidad: Igual al número de filtros aplicados en la capa de convolución.
 ➤Caracteristicas de las fotos reducidas (225x400)
 
 <div align="center">
-	<img src="Comparacion tanda de imagenes aclarando cantidad de fotos.png">
+	<img src="/img/FotoReducida.png">
 </div>
 <div align="center">
 	<em> Figura 7 - Foto Reducida </em>
