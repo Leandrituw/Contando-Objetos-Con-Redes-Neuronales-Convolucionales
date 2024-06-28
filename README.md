@@ -180,14 +180,14 @@ Al final se indica cantidad de maices predecida para cada imagen, precision de p
 ➤Precision de entrenamiento:
 
 <div align="center">
-	<img src="Curva1">
+	<img src="/img/Curva1">
 </div>
 <div align="center">
 	<em> Figura 10 - Curva Aprendizaje </em>
 </div>
 
 <div align="center">
-	<img src="Matriz1">
+	<img src="/img/Matriz1">
 </div>
 <div align="center">
 	<em> Figura 11 - Matriz Confusion </em>
@@ -196,7 +196,7 @@ Al final se indica cantidad de maices predecida para cada imagen, precision de p
 ➤Precision de prediccion de imagenes:
 
 <div align="center">
-	<img src="Predecida1">
+	<img src="/img/Predecida1">
 </div>
 <div align="center">
 	<em> Figura 12 - Imagen Predecida Maices Solos </em>
@@ -207,14 +207,14 @@ Al final se indica cantidad de maices predecida para cada imagen, precision de p
 ➤Precision de entrenamiento:
 
 <div align="center">
-	<img src="Curva2">
+	<img src="/img/Curva2">
 </div>
 <div align="center">
 	<em> Figura 13 - Curva Aprendizaje </em>
 </div>
 
 <div align="center">
-	<img src="Matriz2">
+	<img src="/img/Matriz2">
 </div>
 <div align="center">
 	<em> Figura 14 - Matriz Confusion </em>
@@ -223,7 +223,7 @@ Al final se indica cantidad de maices predecida para cada imagen, precision de p
 ➤Precision de prediccion de imagenes:
 
 <div align="center">
-	<img src="Predecida2">
+	<img src="/img/Predecida2">
 </div>
 <div align="center">
 	<em> Figura 15 - Imagen Predecida Maices Con Lentejas </em>
@@ -234,14 +234,14 @@ Al final se indica cantidad de maices predecida para cada imagen, precision de p
 ➤Precision de entrenamiento:
 
 <div align="Curva3">
-	<img src="Curva3">
+	<img src="/img/Curva3">
 </div>
 <div align="center">
 	<em> Figura 16 - Curva Aprendizaje </em>
 </div>
 
 <div align="center">
-	<img src="Matriz3">
+	<img src="/img/Matriz3">
 </div>
 <div align="center">
 	<em> Figura 17 - Matriz Confusion </em>
@@ -250,7 +250,7 @@ Al final se indica cantidad de maices predecida para cada imagen, precision de p
 ➤Precision de prediccion de imagenes:
 
 <div align="center">
-	<img src="Predecida3">
+	<img src="/img/Predecida3">
 </div>
 <div align="center">
 	<em> Figura 18 - Imagen Predecida Maices Con Lentejas Con Arroz </em>
