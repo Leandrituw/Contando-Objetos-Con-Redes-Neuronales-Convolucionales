@@ -98,19 +98,19 @@ Profundidad: Igual al número de filtros aplicados en la capa de convolución.
 
 2. Criterios para capturar las fotos.
 
-➤Fondo de cartulina negra (22cm de ancho x 27cm de largo con un margen de 1cm)
+➤Fondo de cartulina negra (22cm de ancho x 27cm de largo con un margen de 1cm).
 
-➤Altura de la camara 18cm de alto
+➤Altura de la camara 18cm de alto.
 
-➤Celular Samsung A21s
+➤Celular Samsung A21s.
 
-➤Se tomaron 1000 fotos de maices solos. (50 fotos por cantidad de maices de 1 a 20 maices)
+➤Se tomaron 1000 fotos de maices solos. (50 fotos por cantidad de maices de 1 a 20 maices).
 
 ➤Se tomaron 2000 fotos de maíces con lentejas. Se capturaron 100 fotos por cada cantidad de maíz de 1 a 10 lentejas, comenzando con 1 maíz y 1 lenteja y aumentando hasta 1 maíz y 10 lentejas. Luego, el número de maíces se incrementó de 1 a 20, manteniendo el mismo rango de lentejas de 1 a 10, tomando 10 fotos por cada cantidad de maices con 1 lenteja y asi hasta 10 con un total de 100 fotos por cantidad de maices.
 
 ➤Se tomaron 2000 fotos de maices con lenteas con arroz. Con los mismos criterios que maices con lentejas pero con un fondo de arroz.
 
-➤Caracteristicas de las fotos (2250x4000)
+➤Caracteristicas de las fotos (2250x4000).
 
 <div align="center">
 	<img src="/img/Foto_Pura.png">
@@ -119,11 +119,11 @@ Profundidad: Igual al número de filtros aplicados en la capa de convolución.
 	<em> Figura 6 - Foto Pura </em>
 </div>
 
-3. Criterios para el armado del dataset
+3. Criterios para el armado del dataset.
 
-➤Se reducio la resolucion de las fotos un factor 10 para que tuvieran un tamaño menor sin perder tanta informacion de la misma.
+➤Se reducio la resolucion de las fotos un factor 10 para que tuvieran un tamaño menor sin perder tanta informacion de la misma..
 
-➤Caracteristicas de las fotos reducidas (225x400)
+➤Caracteristicas de las fotos reducidas (225x400).
 
 <div align="center">
 	<img src="/img/FotoReducida.png">
@@ -132,12 +132,12 @@ Profundidad: Igual al número de filtros aplicados en la capa de convolución.
 	<em> Figura 7 - Foto Reducida </em>
 </div>
 
-➤Mayormente se tomo de ejemplo el dataset CIFAR-10
+➤Mayormente se tomo de ejemplo el dataset CIFAR-10.
 
-➤Se renombraron las fotos para un mejor orden segun su numero de foto y cantidad de maices (NumeroDeFoto_CantidadDeMaices ejemplo 1_1, 1_2 y asi hasta 50_1 y luego con 2 maices hasta 20). En el caso de lentejas seria cantidad de maices, cantidad de lentejas y numero de foto (1_1_1 hasta 1_10_10 hasta 20 maices.) y con arroz seria cantidad de maices, cantidad de lentejas, A y numero de foto (1_1_A_1 hasta 1_10_A_10 hasta 20 maices.)
+➤Se renombraron las fotos para un mejor orden segun su numero de foto y cantidad de maices (NumeroDeFoto_CantidadDeMaices ejemplo 1_1, 1_2 y asi hasta 50_1 y luego con 2 maices hasta 20). En el caso de lentejas seria cantidad de maices, cantidad de lentejas y numero de foto (1_1_1 hasta 1_10_10 hasta 20 maices.) y con arroz seria cantidad de maices, cantidad de lentejas, A y numero de foto (1_1_A_1 hasta 1_10_A_10 hasta 20 maices.).
 
 ➤Se ordenaron dentro de una carpeta llamada DataSet_1a20_NumeroDeImagenes_Maices_(Solos o Acompañamiento)_225x400_RGB.
-La misma tiene subcarpetas del 1 al 20 donde dentro se ordenaron las fotos segun su cantidad de maices. (Fotos de 1 maiz en carpeta 1 y asi sucesivamente)
+La misma tiene subcarpetas del 1 al 20 donde dentro se ordenaron las fotos segun su cantidad de maices. (Fotos de 1 maiz en carpeta 1 y asi sucesivamente).
 
 _[Datasets](https://github.com/Leandrituw/Contando-Objetos-Con-Redes-Neuronales-Convolucionales/tree/main/Armado_Del_Dataset)_
 
