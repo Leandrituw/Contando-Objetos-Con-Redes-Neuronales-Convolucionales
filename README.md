@@ -42,7 +42,7 @@ Profundidad: Igual al número de filtros aplicados en la capa de convolución.
 ➤Max Pooling y Average Pooling: Reducen la dimensionalidad de los mapas de características. Max pooling toma el valor máximo en una región específica, mientras que average pooling toma el promedio. Esto reduce el número de parámetros y la carga computacional, además de hacer la red más robusta a pequeñas variaciones en la posición de las características.
 
 <div align="center">
-	<img src="/img/maxpool.gif" width="480" height="380">
+	<img src="/img/maxpool.gif" width="580" height="380">
 </div>
 <div align="center">
 	<em> Figura 3 - MaxPool </em>
