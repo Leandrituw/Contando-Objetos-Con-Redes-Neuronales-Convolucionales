@@ -233,7 +233,7 @@ Al final se indica cantidad de maices predecida para cada imagen, precision de p
 
 ➤Precision de entrenamiento:
 
-<div align="Curva3">
+<div align="center">
 	<img src="/img/Curva3.png">
 </div>
 <div align="center">
