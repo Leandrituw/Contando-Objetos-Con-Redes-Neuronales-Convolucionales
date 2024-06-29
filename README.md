@@ -113,7 +113,7 @@ Profundidad: Igual al número de filtros aplicados en la capa de convolución.
 ➤Caracteristicas de las fotos (2250x4000).
 
 <div align="center">
-	<img src="/img/Foto_Pura.png">
+	<img src="/img/FotoPura.png">
 </div>
 <div align="center">
 	<em> Figura 6 - Foto Pura </em>
