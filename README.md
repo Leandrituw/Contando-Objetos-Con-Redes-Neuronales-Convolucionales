@@ -18,7 +18,7 @@ Convolución (Filtros y Kernel)
 ➤Operación de Convolución: Multiplica los valores del kernel por los valores de la imagen en la región cubierta por el kernel y suma estos valores para obtener un solo valor en la salida. Esto se repite para cada posición del kernel en la imagen.
 
 <div align="center">
-	<img src="/img/convolucion.gif" width="380" height="380">
+	<img src="/img/convolucion.gif" width="480" height="380">
 </div>
 <div align="center">
 	<em> Figura 1 - Convolucion </em>
@@ -42,7 +42,7 @@ Profundidad: Igual al número de filtros aplicados en la capa de convolución.
 ➤Max Pooling y Average Pooling: Reducen la dimensionalidad de los mapas de características. Max pooling toma el valor máximo en una región específica, mientras que average pooling toma el promedio. Esto reduce el número de parámetros y la carga computacional, además de hacer la red más robusta a pequeñas variaciones en la posición de las características.
 
 <div align="center">
-	<img src="/img/maxpool.gif" width="380" height="380">
+	<img src="/img/maxpool.gif" width="480" height="380">
 </div>
 <div align="center">
 	<em> Figura 3 - MaxPool </em>
@@ -53,7 +53,7 @@ Profundidad: Igual al número de filtros aplicados en la capa de convolución.
 ➤Clasificación: Después de varias capas convolucionales y de pooling, los mapas de características se aplanan y pasan a través de una o más capas completamente conectadas. Estas capas actúan como una red neuronal tradicional y se utilizan para la clasificación final.
 
 <div align="center">
-	<img src="/img/fullyconect.gif" width="380" height="380">
+	<img src="/img/fullyconect.gif" width="480" height="380">
 </div>
 <div align="center">
 	<em> Figura 4 - Fully Conect Layers </em>
