@@ -241,7 +241,7 @@ Al final se indica cantidad de maices predecida para cada imagen, precision de p
 </div>
 
 <div align="center">
-	<img src="/img/Matriz3.png">
+	<img src="/img/Matriz3.png" width="408" height="521">
 </div>
 <div align="center">
 	<em> Figura 17 - Matriz Confusion </em>
