@@ -104,6 +104,8 @@ Profundidad: Igual al número de filtros aplicados en la capa de convolución.
 
 ➤Celular Samsung A21s.
 
+➤Mover los objetos con un palito de crochet para que cada foto sea diferente.
+
 ➤Se tomaron 1000 fotos de maices solos. (50 fotos por cantidad de maices de 1 a 20 maices).
 
 ➤Se tomaron 2000 fotos de maíces con lentejas. Se capturaron 100 fotos por cada cantidad de maíz de 1 a 10 lentejas, comenzando con 1 maíz y 1 lenteja y aumentando hasta 1 maíz y 10 lentejas. Luego, el número de maíces se incrementó de 1 a 20, manteniendo el mismo rango de lentejas de 1 a 10, tomando 10 fotos por cada cantidad de maices con 1 lenteja y asi hasta 10 con un total de 100 fotos por cantidad de maices.
@@ -144,13 +146,22 @@ _[Datasets](https://github.com/Leandrituw/Contando-Objetos-Con-Redes-Neuronales-
 ➤Para almacenar los datasets y cargarlos en python los transformamos a archivos con la extension .npy que basicamente lo que hace es leer los archivos de la carpeta DataSet_1a20_NumeroDeImagenes_Maices_(Solos o Acompañamiento)_225x400_RGB y almacenar en una lista el numero de subcarpeta como etiqueta y dentro de la etiqueta guarda la imagen como lista.
 ¿Porque? Son faciles de cargar y leer en python y tiene un tamaño mucho menor que el dataset puro.
 
+<div align="center">
+	<img src="/img/Dataset.png">
+</div>
+<div align="center">
+	<em> Figura 7 - Dataset </em>
+</div>
+
 _[Codigo_Armado_Del_Dataset](https://github.com/Leandrituw/Contando-Objetos-Con-Redes-Neuronales-Convolucionales/blob/main/Armado_Del_Dataset/Reducir_Resolucion_Crear_DataSet_RGB.py)_
 
 ### 5. Diseño De La Red
 
 ➤Librerias utilizadas en el codigo: Numpy, Seaborn, Matplotlib, scikit-learn, TensorFlow Keras, time.
 
-➤Se comenzo con el dataset de solo maices partiendo el mismo en 80% entrenamiento y 20% testeo variando criterios como capas, filtros, pooling, epochs entre otros menos impactantes pero importantes como batch size, dropouts y random state mientras se controlaba la precision de los datos de testeo para conseguir la arquitectura que mejor precision nos diera.
+➤Se comenzo con el dataset de solo maices partiendo el mismo en 80% entrenamiento y 20% testeo variando criterios como capas, filtros, pooling, epochs entre otros menos impactantes pero importantes como batch size, dropouts y random state mientras se controlaba la precision de los datos de testeo para conseguir la arquitectura que mejor precision nos diera, una vez conseguida se intento mejorar pero haciendo cambios solo se logro disminuir la precision, el mejor modelo fue guardado con la extension .h5 porque es una extension mas universal que se puede usar fuera del entorno de keras.
+
+➤Se intento mejorar la mejor arquitectura pero poniendo mas o menos capas y filtros lo unico que se logro fue disminuir la precision asi que se definio la siguiente arquitectura ya que con pocas capas y filtros era lo justo y necesario para una precision alta en poco tiempo.
 
 <div align="center">
 	<img src="ARQUITECTURA FINAL">
@@ -174,6 +185,8 @@ _[Codigo_Entrenar_Red_Neuronal](https://github.com/Leandrituw/Contando-Objetos-C
 
 ➤Se hizo un codigo en el que se sube una carpeta con imagenes a predecir y el modelo a usar.
 Al final se indica cantidad de maices predecida para cada imagen, precision de prediccion, numero de imagenes predecidas correcta e incorrectamente y nombre de imagenes predecidas incorrectamente.
+
+➤¿Como se predicen las imagenes? Al cargarse cada imagen hay un vector de 1 a 20 en el cual todos los valores son 0 y se reemplazan los valores por la probabilidad de que en esa posicion haya esa cantidad de maices, entonces el numero mas cercano a 1 en el vector seria el numero de maices que hay en la foto.
 
 1. MAICES SOLOS
 
