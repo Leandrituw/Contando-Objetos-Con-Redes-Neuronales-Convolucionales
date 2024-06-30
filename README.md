@@ -187,6 +187,7 @@ _[Codigo_Entrenar_Red_Neuronal](https://github.com/Leandrituw/Contando-Objetos-C
 Al final se indica cantidad de maices predecida para cada imagen, precision de prediccion, numero de imagenes predecidas correcta e incorrectamente y nombre de imagenes predecidas incorrectamente.
 
 ➤¿Como se predicen las imagenes? Al cargarse cada imagen hay un vector de 1 a 20 en el cual todos los valores son 0 y se reemplazan los valores por la probabilidad de que en esa posicion haya esa cantidad de maices, entonces el numero mas cercano a 1 en el vector seria el numero de maices que hay en la foto.
+Luego se compara la prediccion con la etiqueta verdadera y se suman las que dio correctamente, finalmente se dividen las predicciones correctas por el total de imagenes y eso nos da la precision.
 
 1. MAICES SOLOS
 
