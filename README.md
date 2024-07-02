@@ -2,6 +2,8 @@
 
 # Contando Objetos Con Redes Neuronales Convolucionales 
 
+Este trabajo fue llevado por Ivan Leiva y Michel Leandro dentro de las Practicas profesionalizantes de la escuela de educacion tecnica N°1 "Luciano Reyes", guiado Cerrotta Santiago de parte del laboratorio de fotonica aplicada de la UTN-FRD durante 200 horas entre marzo y julio de 2024.
+
 ### 1. Objetivo
 
 Crear un dataset con imagenes propias para entrenar una red neuronal. A partir de este, diseñar y optimizar una arquitectura de una red convolucional para clasificar la cantidad de maices (1 a 20).
@@ -118,12 +120,12 @@ Profundidad: Igual al número de filtros aplicados en la capa de convolución.
 	<img src="/img/FotoPura.png">
 </div>
 <div align="center">
-	<em> Figura 6 - Foto Pura </em>
+	<em> Figura 6 - Foto Pura De Ejemplo De Los 3 Datasets Armados </em>
 </div>
 
 3. Criterios para el armado del dataset.
 
-➤Se reducio la resolucion de las fotos un factor 10 para que tuvieran un tamaño menor sin perder tanta informacion de la misma..
+➤Se redujo la resolucion de las fotos un factor 10 para que tuvieran un tamaño menor sin perder tanta informacion de la misma..
 
 ➤Caracteristicas de las fotos reducidas (225x400).
 
@@ -131,7 +133,7 @@ Profundidad: Igual al número de filtros aplicados en la capa de convolución.
 	<img src="/img/FotoReducida.png">
 </div>
 <div align="center">
-	<em> Figura 7 - Foto Reducida </em>
+	<em> Figura 7 - Foto Reducida De Ejemplo De Los 3 Datasets Armados</em>
 </div>
 
 ➤Mayormente se tomo de ejemplo el dataset CIFAR-10.
@@ -247,30 +249,7 @@ Luego se compara la prediccion con la etiqueta verdadera y se suman las que dio 
 
 3. MAICES CON LENTEJAS CON ARROZ
 
-➤Precision de entrenamiento:
-
-<div align="center">
-	<img src="/img/Curva3.png">
-</div>
-<div align="center">
-	<em> Figura 16 - Curva Aprendizaje </em>
-</div>
-
-<div align="center">
-	<img src="/img/Matriz3.png">
-</div>
-<div align="center">
-	<em> Figura 17 - Matriz Confusion </em>
-</div>
-
-➤Precision de prediccion de imagenes:
-
-<div align="center">
-	<img src="/img/Predecida3.png">
-</div>
-<div align="center">
-	<em> Figura 18 - Imagen Predecida Maices Con Lentejas Con Arroz </em>
-</div>
+➤En proceso...
 
 _[Codigo_Prediccion](https://github.com/Leandrituw/Contando-Objetos-Con-Redes-Neuronales-Convolucionales/blob/main/Prediccion_De_Imagenes/Prediccion_RGB.py)_
 
