@@ -256,7 +256,7 @@ _[Codigo_Prediccion](https://github.com/Leandrituw/Contando-Objetos-Con-Redes-Ne
 ### 7. Recursos 
 
 Dentro Del Repositorio Se Encuentra: 
-* 📄Informe: Redes Neuronales Convolucionales - UTN-FRD📄
+* 📄Informe-Redes Neuronales Convolucionales - GFA-UTN-FRD📄
 * 📂Armado_Del_Dataset📂
 * 🡪DataSet_1a20_1000_Maices_Solos_225x400_RGB.zip🡨
 * 🡪DataSet_1a20_2000_Maices_Lentejas_225x400_RGB.zip🡨
