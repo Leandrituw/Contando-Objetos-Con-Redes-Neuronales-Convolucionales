@@ -1,4 +1,4 @@
-![](img/GFA-logo.pn)
+![](img/GFA-logo.png)
 
 # Contando Objetos Con Redes Neuronales Convolucionales 
 
