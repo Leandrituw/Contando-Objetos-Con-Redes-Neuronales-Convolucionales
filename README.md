@@ -166,7 +166,7 @@ _[Codigo_Armado_Del_Dataset](https://github.com/Leandrituw/Contando-Objetos-Con-
 ➤Se intento mejorar la mejor arquitectura pero poniendo mas o menos capas y filtros lo unico que se logro fue disminuir la precision asi que se definio la siguiente arquitectura ya que con pocas capas y filtros era lo justo y necesario para una precision alta en poco tiempo.
 
 <div align="center">
-	<img src="/img/Esquema.png">
+	<img src="/img/Esquema1.png">
 </div>
 <div align="center">
 	<em> Figura 8 - Arquitectura Final </em>
