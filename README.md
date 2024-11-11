@@ -211,6 +211,20 @@ Luego se compara la prediccion con la etiqueta verdadera y se suman las que dio 
 	<em> Figura 11 - Matriz Confusion </em>
 </div>
 
+<div align="center">
+	<img src="/img/FeatureMap1.png">
+</div>
+<div align="center">
+	<em> Feature Map </em>
+</div>
+
+<div align="center">
+	<img src="/img/FeatureMap2.png">
+</div>
+<div align="center">
+	<em> Feature Map </em>
+</div>
+
 ➤Precision de prediccion de imagenes:
 
 <div align="center">
