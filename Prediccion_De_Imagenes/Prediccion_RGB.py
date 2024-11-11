@@ -33,8 +33,8 @@ def mostrar_resultados(img, clase_predicha, prediccion, tiempo_prediccion):
     print(f'\nTiempo de predicción: {tiempo_prediccion:.4f} segundos\n')
 
 # Ruta del modelo guardado y de la carpeta de imágenes
-ruta_modelo = 'D:/Users/Leandro/Downloads/Redes Neuronales/Modelos/Modelo_96.5%_1000f_RGB_Maices_Solos.h5'
-ruta_carpeta_imagenes = 'D:/Users/Leandro/Downloads/Redes Neuronales/Fotos_Prediccion/Prueba'
+ruta_modelo = 'C:/Users/lmichel/Desktop/Redes Neuronales/Modelo_97.50%_1000f_RGB_Maices_Solos.h5'
+ruta_carpeta_imagenes = 'C:/Users/lmichel/Desktop/Redes Neuronales/Maices_Solos'
 
 # Dimensiones de la imagen (ajusta según tu modelo)
 img_height, img_width = 400, 225
@@ -124,8 +124,3 @@ while opcion.lower() != 'salir':
     opcion = input("\n¿Desea visualizar otra imagen? Ingrese el nombre y extensión ('salir' para terminar): ")
 
 print("\nTerminó la ejecución de la red")
-
-
-
-
-
